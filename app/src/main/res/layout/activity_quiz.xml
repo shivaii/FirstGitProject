@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant"
+    android:padding="16dp"
+    tools:context=".Quiz">
+
+    <TextView
+        android:id="@+id/text_view_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textSize="20sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/text_view_quetion_cout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quetion: 1/x"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_below="@id/text_view_score"/>
+<!--    <TextView-->
+<!--        android:id="@+id/text_view_countdown"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="00:30"-->
+<!--        android:textSize="40sp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_alignParentEnd="true"/>-->
+    <TextView
+        android:id="@+id/text_view_quetion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"
+        android:textAlignment="center"
+        android:layout_above="@id/radio_group"/>
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/radio_button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            app:buttonTint="#975B5B"
+            android:text="Option 1"/>
+        <RadioButton
+            android:id="@+id/radio_button_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            app:buttonTint="#975B5B"
+            android:text="Option 2"/>
+        <RadioButton
+            android:id="@+id/radio_button_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            app:buttonTint="#975B5B"
+            android:text="Option 3"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_confirm_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/radio_group"/>
+
+</RelativeLayout>
